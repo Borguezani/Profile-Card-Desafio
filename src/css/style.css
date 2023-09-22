@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Manrope:wght@800&family=Poppins:wght@300;400;500&family=Public+Sans:wght@300;400;800&display=swap");
+body {
+  background-color: #1aa1ad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+body::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  z-index: -1;
+  background: url(./SVG/bg-pattern-top.svg), url(./SVG/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
+  background-size: 47%;
+  transform: rotate(30deg);
+}
+.container {
+  font-family: "Kumbh Sans", sans-serif;
+  width: 1024px;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-card {
+  width: 100%;
+  height: 150px;
+  background-image: url(./SVG/bg-pattern-card.svg);
+  background-size: cover;
+}
+.cartao {
+  font-size: 18px;
+  background-color: white;
+  width: 350px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 5%;
+  align-content: stretch;
+  overflow: hidden;
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+}
+.cartao .informacoes {
+  height: 50%;
+  margin-top: -60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.informacoes img {
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.engajamento {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+  border-top: 1px solid hsl(227, 10%, 46%);
+}
+.nome,
+.contador {
+  font-weight: 700;
+  color: black;
+}
